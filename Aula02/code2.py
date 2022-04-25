@@ -12,6 +12,9 @@ while(True):
 
     cv.imshow('Frame',frame)
     if(cv.waitKey(1) & 0xFF ==ord('q')):
+        #Printar ao quitar
+        cv.imwrite('Aula02/print.png',frame)
         break
+
 cap.release()
 cv.destroyAllWindows()
