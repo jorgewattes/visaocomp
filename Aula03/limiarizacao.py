@@ -2,8 +2,9 @@ from cv2 import threshold
 import numpy as np
 
 def limiarizar(image):
-    threshold=150
+    threshold=200
     shape = np.shape(image)
+    print(shape)
     image_limiarizada = np.zeros(shape)
     for j in range (0, shape[1]):
         for i in range(0,shape[0]):
